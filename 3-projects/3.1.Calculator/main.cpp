@@ -6,10 +6,12 @@ using namespace std;
 int main() {
     float value_1, value_2;
     char operate;
-    cout << "Enter Calculation: ";
+    cout << "Enter first value: ";
     cin >> value_1;
-    cin >> operate;
+    cout << "Enter second value: ";
     cin >> value_2;
+    cout << "Enter Operator: ";
+    cin >> operate;
     if (operate == '+')
     {
         float sum = value_1 + value_2;
