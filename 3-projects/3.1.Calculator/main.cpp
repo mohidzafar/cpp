@@ -32,6 +32,10 @@ int main() {
         float divide = value_1 / value_2;
         cout << "Answer: " << divide << endl;
     }
+    else
+    {
+        cout << "'Invalid Entries'" << endl;
+    }
     
     return 0;
 }
