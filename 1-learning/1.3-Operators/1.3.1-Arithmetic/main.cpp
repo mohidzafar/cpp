@@ -1,6 +1,5 @@
 #include <iostream>
 
-using namespace std;
 
 int main() {
     //Addition
@@ -8,30 +7,30 @@ int main() {
     int number2{7};
 
     int result = number1 + number2;
-    cout << "result : " << result << endl;
+    std::cout << "result : " << result << std::endl;
 
     //Subtraction
     result = number2 - number1 ;
-    cout << "result : " << result << endl;
+    std::cout << "result : " << result << std::endl;
 
     result = number1 - number2;
-    cout << "result : " << result << endl;
+    std::cout << "result : " << result << std::endl;
 
    //Multiplication
    result = number1 * number2;
-    cout << "result : " << result << endl;
+    std::cout << "result : " << result << std::endl;
 
 
    //Division
     result = number2 / number1;
-    cout << "result : " << result << endl;
+    std::cout << "result : " << result << std::endl;
 
 
    //Modulus
     result = number2 % number1; 
-    cout << "result : " << result << endl;
+    std::cout << "result : " << result << std::endl;
 
     result = 33 % 10;
-    cout << "result : " << result << endl;
+    std::cout << "result : " << result << std::endl;
     return 0;
 }

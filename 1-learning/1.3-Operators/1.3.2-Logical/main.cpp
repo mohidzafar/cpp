@@ -1,6 +1,5 @@
 #include <iostream>
 
-using namespace std;
 
 int main(){
 
@@ -8,49 +7,49 @@ int main(){
     bool b {false};
     bool c {true};
 	
-	cout << boolalpha; // true / false
-	cout << "a : " << a << endl;
-	cout << "b : " << b << endl;
-	cout << "c : " << c << endl;
+	std::cout << boolalpha; // true / false
+	std::cout << "a : " << a << std::endl;
+	std::cout << "b : " << b << std::endl;
+	std::cout << "c : " << c << std::endl;
 
 	
 	//AND : Evaluates to true when all operands are true.
 	//      A single false operand will drag 
     //      the entire expression to evaluating false.
 	
-	cout << endl;
-	cout << "Basic AND operations" << endl;
+	std::cout << std::endl;
+	std::cout << "Basic AND operations" << std::endl;
 
-    cout << " a && b : " << (a && b) << endl; // false
-    cout << " a && c : " << (a && c ) << endl; // true
-    cout << " a && b && c :" << (a && b && c) << endl; // false
+    std::cout << " a && b : " << (a && b) << std::endl; // false
+    std::cout << " a && c : " << (a && c ) << std::endl; // true
+    std::cout << " a && b && c :" << (a && b && c) << std::endl; // false
 
 
 	//OR : Evaluates to true when at least one operand true.
 	//      A single true operand will push 
     //      the entire expression to evaluating true.
-	cout << endl;
-	cout << "Basic OR operations" << endl;
-    cout << " a || b : " << (a || b) << endl;
-    cout << " a || c : " << (a || c ) << endl;
-    cout << " a ||b || c :" << (a || b || c) << endl;
+	std::cout << std::endl;
+	std::cout << "Basic OR operations" << std::endl;
+    std::cout << " a || b : " << (a || b) << std::endl;
+    std::cout << " a || c : " << (a || c ) << std::endl;
+    std::cout << " a ||b || c :" << (a || b || c) << std::endl;
 
 
 	//NOT : Negates whateve operand you put it with
-	cout << endl;
-	cout << "Basic NOT operations" << endl;	
+	std::cout << std::endl;
+	std::cout << "Basic NOT operations" << std::endl;	
 	
-	cout << "!a : " << !a << endl;
-	cout << "!b : " << !b << endl;
-	cout << "!c : " << !c << endl;
+	std::cout << "!a : " << !a << std::endl;
+	std::cout << "!b : " << !b << std::endl;
+	std::cout << "!c : " << !c << std::endl;
 
 
 
 	//Combinations of all these operators
-	cout << endl;
-	cout << "Combining logical operators" << endl;
+	std::cout << std::endl;
+	std::cout << "Combining logical operators" << std::endl;
 	// !(a &&b) || c
-	cout << "!(a &&b) || c : " << (!(a &&b) || c) << endl; // true
+	std::cout << "!(a &&b) || c : " << (!(a &&b) || c) << std::endl; // true
 
 
     //Combining logical operators with relational operators
@@ -58,22 +57,22 @@ int main(){
 	int e{20};
 	int f{11};
 	
-	cout << endl;
-	cout << "Relational and logic operations on integers" << endl;
-	cout << "d : " << d << endl;
-	cout << "e : " << e << endl;
-	cout << "f : " << f << endl;
+	std::cout << std::endl;
+	std::cout << "Relational and logic operations on integers" << std::endl;
+	std::cout << "d : " << d << std::endl;
+	std::cout << "e : " << e << std::endl;
+	std::cout << "f : " << f << std::endl;
 	
-	cout << endl;
+	std::cout << std::endl;
 	
-	cout << "(d > e) && (d > f) : " << ((d > e) && (d > f)) << endl; // true
-	cout << "(d==e) || (e <= f ) : " << ((d==e) || (e <= f ) ) << endl;
-	cout << "(d < e) || (d > f) : " << ((d < e) || (d > f)) << endl;
-	cout << "(f > e) || (d < f) : " << ((f > e) || (d < f)) << endl;
-	cout << "(d > f) && (f <= d) : " << ((d > f) && (f <= d)) << endl;
-	cout << "(d > e) && (d <= f) : " << ((d > e) && (d <= f)) << endl;
-	cout << "(! a) && (d == e) : " << ((! a) && (d == e)) << endl;
-	cout << "(! a) && (d == e) : " << ((! a) && (d == e)) << endl;
+	std::cout << "(d > e) && (d > f) : " << ((d > e) && (d > f)) << std::endl; // true
+	std::cout << "(d==e) || (e <= f ) : " << ((d==e) || (e <= f ) ) << std::endl;
+	std::cout << "(d < e) || (d > f) : " << ((d < e) || (d > f)) << std::endl;
+	std::cout << "(f > e) || (d < f) : " << ((f > e) || (d < f)) << std::endl;
+	std::cout << "(d > f) && (f <= d) : " << ((d > f) && (f <= d)) << std::endl;
+	std::cout << "(d > e) && (d <= f) : " << ((d > e) && (d <= f)) << std::endl;
+	std::cout << "(! a) && (d == e) : " << ((! a) && (d == e)) << std::endl;
+	std::cout << "(! a) && (d == e) : " << ((! a) && (d == e)) << std::endl;
    
     return 0;
 }

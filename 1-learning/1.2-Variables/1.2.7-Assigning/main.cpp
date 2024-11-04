@@ -3,33 +3,33 @@
 int main(){
 
 	int var1{123}; // Declare and initialize
-    cout << "var1 : "  << var1 << endl;
+    std::cout << "var1 : "  << var1 << std::endl;
     
     var1 = 55; // Assign
-    cout << "var1 : "  << var1 << endl;
+    std::cout << "var1 : "  << var1 << std::endl;
     
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "----------------" << endl;
+    std::cout << "----------------" << std::endl;
 
     double var2 {44.55}; // Declare and initialize
-    cout << "var2 : " << var2 << endl;
+    std::cout << "var2 : " << var2 << std::endl;
     
     var2 = 99.99; // Assign
-    cout << "var2 : " << var2 << endl;
+    std::cout << "var2 : " << var2 << std::endl;
     
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "----------------" << endl;
+    std::cout << "----------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
     bool state{false}; // Declare and initialize
-    cout << boolalpha;
-    cout << "state : " << state << endl;
+    std::cout << boolalpha;
+    std::cout << "state : " << state << std::endl;
     
     state = true; // Assign
     
-    cout << "state : " << state << endl;
+    std::cout << "state : " << state << std::endl;
 
 
     //Auto type deduction
@@ -38,7 +38,7 @@ int main(){
     
     var3 = -22; // Assign negative number. DANGER! , - in -22 is equal to 4294967274U
     
-    cout << "var3 : " << var3 << endl;
+    std::cout << "var3 : " << var3 << std::endl;
 
     return 0;
 }

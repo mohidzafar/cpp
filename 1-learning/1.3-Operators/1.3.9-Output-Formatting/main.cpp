@@ -1,390 +1,389 @@
 #include <iostream>
 #include <iomanip>
 
-using namespace std;
 
 int main(){
     
-    cout << "Hello ";
-    cout << "World";
+    std::cout << "Hello ";
+    std::cout << "World";
     
-    cout << endl;
+    std::cout << std::endl;
     
-    cout << "-------------" << endl;
+    std::cout << "-------------" << std::endl;
     
-    cout << "Hello " << endl;
-    cout << "World " << endl;
+    std::cout << "Hello " << std::endl;
+    std::cout << "World " << std::endl;
     
-    cout << endl;
+    std::cout << std::endl;
     
-    cout << "Hello\n";
-    cout << "World\n";
+    std::cout << "Hello\n";
+    std::cout << "World\n";
     
     
     //===================================================================
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "This is a nice message...." << endl << flush;
-
-    //===================================================================
-    cout << endl;
-
-
-    cout << "\n<===== Unformatted table =====>\n" << endl;
-
-    cout << "Daniel" << " " << "Gray" << " 25" << endl;
-    cout << "Stanley" <<" "  << "Woods" << " 33" << endl;
-    cout << "Jordan" << " "  << "Parker" << " 45" << endl;
-    cout << "Joe" << " " << "Ball" << " 21" << endl;
-    cout << "Josh" << " " << "Carr" << " 27" << endl;
-    cout << "Izaiah" << " " << "Robinson" << " 29" << endl;
-
-    cout << endl;
+    std::cout << "This is a nice message...." << std::endl << flush;
 
     //===================================================================
+    std::cout << std::endl;
 
-    cout << "\n<===== Formatted table =====>\n" << endl;
 
-    cout << setw(2) << "" << setw(10) << "FirstName" << setw(10) << "LastName" << setw(5) << "Age" << endl;
-    cout << endl;
-    cout << setw(2) << "1." << setw(10) << "Daniel"  << setw(10) << "Gray" << setw(5) << "25" << endl;
-    cout << setw(2) << "2." << setw(10) << "Stanley" << setw(10)  << "Woods" << setw(5) <<  "33" << endl;
-    cout << setw(2) << "3." << setw(10) <<  "Jordan" << setw(10)  << "Parker" << setw(5) << "45" << endl;
-    cout << setw(2) << "4." << setw(10) <<  "Joe" << setw(10) << "Ball" << setw(5) << "21" << endl;
-    cout << setw(2) << "5." << setw(10) << "Josh" << setw(10) << "Carr" << setw(5) <<"27" << endl;
-    cout << setw(2) << "6." << setw(10) << "Izaiah" << setw(10) << "Robinson" << setw(5) << "29" << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << "\n<===== Unformatted table =====>\n" << std::endl;
+
+    std::cout << "Daniel" << " " << "Gray" << " 25" << std::endl;
+    std::cout << "Stanley" <<" "  << "Woods" << " 33" << std::endl;
+    std::cout << "Jordan" << " "  << "Parker" << " 45" << std::endl;
+    std::cout << "Joe" << " " << "Ball" << " 21" << std::endl;
+    std::cout << "Josh" << " " << "Carr" << " 27" << std::endl;
+    std::cout << "Izaiah" << " " << "Robinson" << " 29" << std::endl;
+
+    std::cout << std::endl;
 
     //===================================================================
 
-    cout << endl;
-    cout << "<=== Formatted Table with Variables ===>" << endl;
+    std::cout << "\n<===== Formatted table =====>\n" << std::endl;
 
-    cout << endl;
+    std::cout << setw(2) << "" << setw(10) << "FirstName" << setw(10) << "LastName" << setw(5) << "Age" << std::endl;
+    std::cout << std::endl;
+    std::cout << setw(2) << "1." << setw(10) << "Daniel"  << setw(10) << "Gray" << setw(5) << "25" << std::endl;
+    std::cout << setw(2) << "2." << setw(10) << "Stanley" << setw(10)  << "Woods" << setw(5) <<  "33" << std::endl;
+    std::cout << setw(2) << "3." << setw(10) <<  "Jordan" << setw(10)  << "Parker" << setw(5) << "45" << std::endl;
+    std::cout << setw(2) << "4." << setw(10) <<  "Joe" << setw(10) << "Ball" << setw(5) << "21" << std::endl;
+    std::cout << setw(2) << "5." << setw(10) << "Josh" << setw(10) << "Carr" << setw(5) <<"27" << std::endl;
+    std::cout << setw(2) << "6." << setw(10) << "Izaiah" << setw(10) << "Robinson" << setw(5) << "29" << std::endl;
+    std::cout << "-----------------------------" << std::endl;
+
+    //===================================================================
+
+    std::cout << std::endl;
+    std::cout << "<=== Formatted Table with Variables ===>" << std::endl;
+
+    std::cout << std::endl;
     
     int col_width {10};
     
     
-    cout << setw(col_width/5) << "" << setw(col_width) << "FirstName" << setw(col_width) << "LastName" << setw(col_width/2) << "Age" << endl;
-    cout << endl;
-    cout << setw(col_width/5) << "1." << setw(col_width) << "Daniel"  << setw(col_width) << "Gray" << setw(col_width/2) << "25" << endl;
-    cout << setw(col_width/5) << "2." << setw(col_width) << "Stanley" << setw(col_width)  << "Woods" << setw(col_width/2) <<  "33" << endl;
-    cout << setw(col_width/5) << "3." << setw(col_width) <<  "Jordan" << setw(col_width)  << "Parker" << setw(col_width/2) << "45" << endl;
-    cout << setw(col_width/5) << "4." << setw(col_width) <<  "Joe" << setw(col_width) << "Ball" << setw(col_width/2) << "21" << endl;
-    cout << setw(col_width/5) << "5." << setw(col_width) << "Josh" << setw(col_width) << "Carr" << setw(col_width/2) <<"27" << endl;
-    cout << setw(col_width/5) << "6." << setw(col_width) << "Izaiah" << setw(col_width) << "Robinson" << setw(col_width/2) << "29" << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << setw(col_width/5) << "" << setw(col_width) << "FirstName" << setw(col_width) << "LastName" << setw(col_width/2) << "Age" << std::endl;
+    std::cout << std::endl;
+    std::cout << setw(col_width/5) << "1." << setw(col_width) << "Daniel"  << setw(col_width) << "Gray" << setw(col_width/2) << "25" << std::endl;
+    std::cout << setw(col_width/5) << "2." << setw(col_width) << "Stanley" << setw(col_width)  << "Woods" << setw(col_width/2) <<  "33" << std::endl;
+    std::cout << setw(col_width/5) << "3." << setw(col_width) <<  "Jordan" << setw(col_width)  << "Parker" << setw(col_width/2) << "45" << std::endl;
+    std::cout << setw(col_width/5) << "4." << setw(col_width) <<  "Joe" << setw(col_width) << "Ball" << setw(col_width/2) << "21" << std::endl;
+    std::cout << setw(col_width/5) << "5." << setw(col_width) << "Josh" << setw(col_width) << "Carr" << setw(col_width/2) <<"27" << std::endl;
+    std::cout << setw(col_width/5) << "6." << setw(col_width) << "Izaiah" << setw(col_width) << "Robinson" << setw(col_width/2) << "29" << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
     //===================================================================
 
-    cout << "<=== Right Justified Table ===>" << endl;
+    std::cout << "<=== Right Justified Table ===>" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
     col_width = 10;
 
-    cout << right;
-    cout << setw(col_width/5) << "" << setw(col_width) << "FirstName" << setw(col_width) << "LastName" << setw(col_width/2) << "Age" << endl;
-    cout << endl;
-    cout << setw(col_width/5) << "1." << setw(col_width) << "Daniel"  << setw(col_width) << "Gray" << setw(col_width/2) << "25" << endl;
-    cout << setw(col_width/5) << "2." << setw(col_width) << "Stanley" << setw(col_width)  << "Woods" << setw(col_width/2) <<  "33" << endl;
-    cout << setw(col_width/5) << "3." << setw(col_width) <<  "Jordan" << setw(col_width)  << "Parker" << setw(col_width/2) << "45" << endl;
-    cout << setw(col_width/5) << "4." << setw(col_width) <<  "Joe" << setw(col_width) << "Ball" << setw(col_width/2) << "21" << endl;
-    cout << setw(col_width/5) << "5." << setw(col_width) << "Josh" << setw(col_width) << "Carr" << setw(col_width/2) <<"27" << endl;
-    cout << setw(col_width/5) << "6." << setw(col_width) << "Izaiah" << setw(col_width) << "Robinson" << setw(col_width/2) << "29" << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << right;
+    std::cout << setw(col_width/5) << "" << setw(col_width) << "FirstName" << setw(col_width) << "LastName" << setw(col_width/2) << "Age" << std::endl;
+    std::cout << std::endl;
+    std::cout << setw(col_width/5) << "1." << setw(col_width) << "Daniel"  << setw(col_width) << "Gray" << setw(col_width/2) << "25" << std::endl;
+    std::cout << setw(col_width/5) << "2." << setw(col_width) << "Stanley" << setw(col_width)  << "Woods" << setw(col_width/2) <<  "33" << std::endl;
+    std::cout << setw(col_width/5) << "3." << setw(col_width) <<  "Jordan" << setw(col_width)  << "Parker" << setw(col_width/2) << "45" << std::endl;
+    std::cout << setw(col_width/5) << "4." << setw(col_width) <<  "Joe" << setw(col_width) << "Ball" << setw(col_width/2) << "21" << std::endl;
+    std::cout << setw(col_width/5) << "5." << setw(col_width) << "Josh" << setw(col_width) << "Carr" << setw(col_width/2) <<"27" << std::endl;
+    std::cout << setw(col_width/5) << "6." << setw(col_width) << "Izaiah" << setw(col_width) << "Robinson" << setw(col_width/2) << "29" << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
     //===================================================================
 
-    cout << "<=== Left Justified Table ===>" << endl;
+    std::cout << "<=== Left Justified Table ===>" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
     col_width = 10;
 
-    cout << left;
-    cout << setw(col_width/5) << "" << setw(col_width) << "FirstName" << setw(col_width) << "LastName" << setw(col_width/2) << "Age" << endl;
-    cout << endl;
-    cout << setw(col_width/5) << "1." << setw(col_width) << "Daniel"  << setw(col_width) << "Gray" << setw(col_width/2) << "25" << endl;
-    cout << setw(col_width/5) << "2." << setw(col_width) << "Stanley" << setw(col_width)  << "Woods" << setw(col_width/2) <<  "33" << endl;
-    cout << setw(col_width/5) << "3." << setw(col_width) <<  "Jordan" << setw(col_width)  << "Parker" << setw(col_width/2) << "45" << endl;
-    cout << setw(col_width/5) << "4." << setw(col_width) <<  "Joe" << setw(col_width) << "Ball" << setw(col_width/2) << "21" << endl;
-    cout << setw(col_width/5) << "5." << setw(col_width) << "Josh" << setw(col_width) << "Carr" << setw(col_width/2) <<"27" << endl;
-    cout << setw(col_width/5) << "6." << setw(col_width) << "Izaiah" << setw(col_width) << "Robinson" << setw(col_width/2) << "29" << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << left;
+    std::cout << setw(col_width/5) << "" << setw(col_width) << "FirstName" << setw(col_width) << "LastName" << setw(col_width/2) << "Age" << std::endl;
+    std::cout << std::endl;
+    std::cout << setw(col_width/5) << "1." << setw(col_width) << "Daniel"  << setw(col_width) << "Gray" << setw(col_width/2) << "25" << std::endl;
+    std::cout << setw(col_width/5) << "2." << setw(col_width) << "Stanley" << setw(col_width)  << "Woods" << setw(col_width/2) <<  "33" << std::endl;
+    std::cout << setw(col_width/5) << "3." << setw(col_width) <<  "Jordan" << setw(col_width)  << "Parker" << setw(col_width/2) << "45" << std::endl;
+    std::cout << setw(col_width/5) << "4." << setw(col_width) <<  "Joe" << setw(col_width) << "Ball" << setw(col_width/2) << "21" << std::endl;
+    std::cout << setw(col_width/5) << "5." << setw(col_width) << "Josh" << setw(col_width) << "Carr" << setw(col_width/2) <<"27" << std::endl;
+    std::cout << setw(col_width/5) << "6." << setw(col_width) << "Izaiah" << setw(col_width) << "Robinson" << setw(col_width/2) << "29" << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
-
-    //===================================================================
-
-    cout << "<=== Internal Justified Table ===>" << endl;
-
-    cout << endl;
-
-    cout << left;
-    cout << setw(10) << -123.45 << endl;
-    cout << right;
-    cout << setw(10) << -123.45 << endl;
-    cout << internal;
-    cout << setw(10) << -123.45 << endl;
-    cout << "-----------------------------" << endl;
-
-    cout << endl;
+    std::cout << std::endl;
 
     //===================================================================
 
-    cout << "<=== Fill Characters Table ===>" << endl;
+    std::cout << "<=== Internal Justified Table ===>" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
+
+    std::cout << left;
+    std::cout << setw(10) << -123.45 << std::endl;
+    std::cout << right;
+    std::cout << setw(10) << -123.45 << std::endl;
+    std::cout << internal;
+    std::cout << setw(10) << -123.45 << std::endl;
+    std::cout << "-----------------------------" << std::endl;
+
+    std::cout << std::endl;
+
+    //===================================================================
+
+    std::cout << "<=== Fill Characters Table ===>" << std::endl;
+
+    std::cout << std::endl;
 
     col_width = 20;
 
-    cout << left;
-    cout << setfill('_');
-    cout << setw(col_width/5) << "" << setw(col_width) << "FirstName" << setw(col_width) << "LastName" << setw(col_width/2) << "Age" << endl;
-    cout << endl;
-    cout << setw(col_width/5) << "1." << setw(col_width) << "Daniel"  << setw(col_width) << "Gray" << setw(col_width/2) << "25" << endl;
-    cout << setw(col_width/5) << "2." << setw(col_width) << "Stanley" << setw(col_width)  << "Woods" << setw(col_width/2) <<  "33" << endl;
-    cout << setw(col_width/5) << "3." << setw(col_width) <<  "Jordan" << setw(col_width)  << "Parker" << setw(col_width/2) << "45" << endl;
-    cout << setw(col_width/5) << "4." << setw(col_width) <<  "Joe" << setw(col_width) << "Ball" << setw(col_width/2) << "21" << endl;
-    cout << setw(col_width/5) << "5." << setw(col_width) << "Josh" << setw(col_width) << "Carr" << setw(col_width/2) <<"27" << endl;
-    cout << setw(col_width/5) << "6." << setw(col_width) << "Izaiah" << setw(col_width) << "Robinson" << setw(col_width/2) << "29" << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << left;
+    std::cout << setfill('_');
+    std::cout << setw(col_width/5) << "" << setw(col_width) << "FirstName" << setw(col_width) << "LastName" << setw(col_width/2) << "Age" << std::endl;
+    std::cout << std::endl;
+    std::cout << setw(col_width/5) << "1." << setw(col_width) << "Daniel"  << setw(col_width) << "Gray" << setw(col_width/2) << "25" << std::endl;
+    std::cout << setw(col_width/5) << "2." << setw(col_width) << "Stanley" << setw(col_width)  << "Woods" << setw(col_width/2) <<  "33" << std::endl;
+    std::cout << setw(col_width/5) << "3." << setw(col_width) <<  "Jordan" << setw(col_width)  << "Parker" << setw(col_width/2) << "45" << std::endl;
+    std::cout << setw(col_width/5) << "4." << setw(col_width) <<  "Joe" << setw(col_width) << "Ball" << setw(col_width/2) << "21" << std::endl;
+    std::cout << setw(col_width/5) << "5." << setw(col_width) << "Josh" << setw(col_width) << "Carr" << setw(col_width/2) <<"27" << std::endl;
+    std::cout << setw(col_width/5) << "6." << setw(col_width) << "Izaiah" << setw(col_width) << "Robinson" << setw(col_width/2) << "29" << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
     //===================================================================
 
-    cout << "<===== BoolAlpha & NoBoolAlpha =====>" << endl;
+    std::cout << "<===== BoolAlpha & NoBoolAlpha =====>" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
     bool T_cond {true};
     bool F_cond {false};
 
-    cout << "<=== Bool Alpha ===>" << endl;
+    std::cout << "<=== Bool Alpha ===>" << std::endl;
     
-    cout << endl;
-    cout << boolalpha;
-    cout << "T_Condition : " << T_cond << endl;
-    cout << "F_Condition : " << F_cond << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << std::endl;
+    std::cout << boolalpha;
+    std::cout << "T_Condition : " << T_cond << std::endl;
+    std::cout << "F_Condition : " << F_cond << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "<=== No Bool Alpha ===>" << endl;
+    std::cout << "<=== No Bool Alpha ===>" << std::endl;
 
-    cout << endl;
-    cout << noboolalpha;
-    cout << "T_Condition : " << T_cond << endl;
-    cout << "F_Condition : " << F_cond << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << std::endl;
+    std::cout << noboolalpha;
+    std::cout << "T_Condition : " << T_cond << std::endl;
+    std::cout << "F_Condition : " << F_cond << std::endl;
+    std::cout << "-----------------------------" << std::endl;
     
-    cout << endl;
+    std::cout << std::endl;
 
     //===================================================================
 
-    cout << "<===== ShowPos & NoShowPos =====>" << endl;
+    std::cout << "<===== ShowPos & NoShowPos =====>" << std::endl;
 
     int pos_num {34};
     int neg_num {-45};
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "<=== Show Pos ===>" << endl;
+    std::cout << "<=== Show Pos ===>" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << showpos;
-    cout << "Positive : " << pos_num << endl;
-    cout << "Negative : " << neg_num << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << showpos;
+    std::cout << "Positive : " << pos_num << std::endl;
+    std::cout << "Negative : " << neg_num << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << noshowpos;
-    cout << "Positive : " << pos_num << endl;
-    cout << "Negative : " << neg_num << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << noshowpos;
+    std::cout << "Positive : " << pos_num << std::endl;
+    std::cout << "Negative : " << neg_num << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
     //===================================================================
 
-    cout << "<===== Different Number Systems =====>" << endl;
+    std::cout << "<===== Different Number Systems =====>" << std::endl;
 
     int pos_int {543243};
     int neg_int {-43225};
     double double_var {432.43};
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "<=== Default Base Format ===>" << endl;
+    std::cout << "<=== Default Base Format ===>" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "Positive Int : " << pos_int << endl;
-    cout << "Negative Int : " << neg_int << endl;
-    cout << "Double Var   : " << double_var << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << "Positive Int : " << pos_int << std::endl;
+    std::cout << "Negative Int : " << neg_int << std::endl;
+    std::cout << "Double Var   : " << double_var << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "<=== Positive Int ===>" << endl;
+    std::cout << "<=== Positive Int ===>" << std::endl;
     
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "Decimal     : " << dec << pos_int << endl;
-    cout << "HexaDecimal : " << hex << pos_int << endl;
-    cout << "Octal       : " << oct << pos_int << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << "Decimal     : " << dec << pos_int << std::endl;
+    std::cout << "HexaDecimal : " << hex << pos_int << std::endl;
+    std::cout << "Octal       : " << oct << pos_int << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "<=== Negative Int ===>" << endl;
+    std::cout << "<=== Negative Int ===>" << std::endl;
     
-    cout << endl;
+    std::cout << std::endl;
     
-    cout << "Decimal     : " << dec << neg_int << endl;
-    cout << "HexaDecimal : " << hex << neg_int << endl;
-    cout << "Octal       : " << oct << neg_int << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << "Decimal     : " << dec << neg_int << std::endl;
+    std::cout << "HexaDecimal : " << hex << neg_int << std::endl;
+    std::cout << "Octal       : " << oct << neg_int << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "<=== Double Variable ===>" << endl;
+    std::cout << "<=== Double Variable ===>" << std::endl;
     
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "Decimal     : " << dec << double_var << endl;
-    cout << "HexaDecimal : " << hex << double_var << endl;
-    cout << "Octal       : " << oct << double_var << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << "Decimal     : " << dec << double_var << std::endl;
+    std::cout << "HexaDecimal : " << hex << double_var << std::endl;
+    std::cout << "Octal       : " << oct << double_var << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
     //===================================================================
 
-    cout << "<===== Upper & Lower Case =====>" << endl;
+    std::cout << "<===== Upper & Lower Case =====>" << std::endl;
 
     pos_int = 717171;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "<=== LowerCase ===>" << endl;
-    cout << "     (Default)      " << endl;
+    std::cout << "<=== LowerCase ===>" << std::endl;
+    std::cout << "     (Default)      " << std::endl;
     
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "Decimal     : " << dec << pos_int << endl;
-    cout << "HexaDecimal : " << hex << pos_int << endl;
-    cout << "Octal       : " << oct << pos_int << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << "Decimal     : " << dec << pos_int << std::endl;
+    std::cout << "HexaDecimal : " << hex << pos_int << std::endl;
+    std::cout << "Octal       : " << oct << pos_int << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "<=== UpperCase ===>" << endl;
+    std::cout << "<=== UpperCase ===>" << std::endl;
     
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << uppercase;
-    cout << "Decimal     : " << dec << pos_int << endl;
-    cout << "HexaDecimal : " << hex << pos_int << endl;
-    cout << "Octal       : " << oct << pos_int << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << uppercase;
+    std::cout << "Decimal     : " << dec << pos_int << std::endl;
+    std::cout << "HexaDecimal : " << hex << pos_int << std::endl;
+    std::cout << "Octal       : " << oct << pos_int << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
     //===================================================================
 
-    cout << "<===== Fixed & Scientific =====>" << endl;
+    std::cout << "<===== Fixed & Scientific =====>" << std::endl;
 
     double A {3.1415926535897932384626433832795};
     double B {2006.0};
     double C {1.34e-10};
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "<=== Fixed ===>" << endl;
+    std::cout << "<=== Fixed ===>" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << fixed;
-    cout << "A : " << A << endl;
-    cout << "B : " << B << endl;
-    cout << "C : " << C << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << fixed;
+    std::cout << "A : " << A << std::endl;
+    std::cout << "B : " << B << std::endl;
+    std::cout << "C : " << C << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "<=== Scientific ===>" << endl;
+    std::cout << "<=== Scientific ===>" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << scientific;
-    cout << "A : " << A << endl;
-    cout << "B : " << B << endl;
-    cout << "C : " << C << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << scientific;
+    std::cout << "A : " << A << std::endl;
+    std::cout << "B : " << B << std::endl;
+    std::cout << "C : " << C << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "<=== Reset ===>" << endl;
+    std::cout << "<=== Reset ===>" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout.unsetf(ios::scientific | ios::fixed);
-    cout << "A : " << A << endl;
-    cout << "B : " << B << endl;
-    cout << "C : " << C << endl;
-    cout << "-----------------------------" << endl;
+    std::cout.unsetf(ios::scientific | ios::fixed);
+    std::cout << "A : " << A << std::endl;
+    std::cout << "B : " << B << std::endl;
+    std::cout << "C : " << C << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
     //===================================================================
 
-    cout << "<===== Show & No Show Point =====>" << endl;
+    std::cout << "<===== Show & No Show Point =====>" << std::endl;
 
     double d {34.1};
     double e {101.99};
     double f {12.0};
     int    g {45};
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "<=== No Show Point ===>" << endl;
-    cout << "       (Default)       " << endl;
+    std::cout << "<=== No Show Point ===>" << std::endl;
+    std::cout << "       (Default)       " << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "D : " << d << endl;
-    cout << "E : " << e << endl;
-    cout << "F : " << f << endl;
-    cout << "G : " << g << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << "D : " << d << std::endl;
+    std::cout << "E : " << e << std::endl;
+    std::cout << "F : " << f << std::endl;
+    std::cout << "G : " << g << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "<=== Show Point ===>" << endl;
+    std::cout << "<=== Show Point ===>" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << showpoint;
-    cout << "D : " << d << endl;
-    cout << "E : " << e << endl;
-    cout << "F : " << f << endl;
-    cout << "G : " << g << endl;
-    cout << "-----------------------------" << endl;
+    std::cout << showpoint;
+    std::cout << "D : " << d << std::endl;
+    std::cout << "E : " << e << std::endl;
+    std::cout << "F : " << f << std::endl;
+    std::cout << "G : " << g << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
     //===================================================================
 
-    cout << "====================================" << endl;
+    std::cout << "====================================" << std::endl;
 
     return 0;
 

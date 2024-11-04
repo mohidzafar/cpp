@@ -1,6 +1,5 @@
 #include <iostream>
 
-using namespace std;
 
 int main() {
     int car = 700;
@@ -9,14 +8,14 @@ int main() {
     int truck = 1600;
     int vehicle = car + truck + van + bike;
 
-    cout << "\nNumber of Vehicles: " << vehicle << "\n" << endl;
+    std::cout << "\nNumber of Vehicles: " << vehicle << "\n" << std::endl;
 
-    cout << "Number of Cars: " << car << endl;
-    cout << "Number of Vans: " << van << endl;
-    cout << "Number of Bike: " << bike << endl;
-    cout << "Number of Truck: " << truck << "\n" << endl;
+    std::cout << "Number of Cars: " << car << std::endl;
+    std::cout << "Number of Vans: " << van << std::endl;
+    std::cout << "Number of Bike: " << bike << std::endl;
+    std::cout << "Number of Truck: " << truck << "\n" << std::endl;
 
-    cout << "Size of int: " << sizeof(int) << " Bytes" << endl;
-    cout << "Size of truck variable: " << sizeof(truck) << " Bytes" << endl;
+    std::cout << "Size of int: " << sizeof(int) << " Bytes" << std::endl;
+    std::cout << "Size of truck variable: " << sizeof(truck) << " Bytes" << std::endl;
     return 0;
 }

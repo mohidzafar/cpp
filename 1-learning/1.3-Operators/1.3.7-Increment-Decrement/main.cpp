@@ -1,51 +1,50 @@
 #include <iostream> 
 
-using namespace std;
 
 int main() {
     int value {5};
 
     // Increment
     value = value + 1;
-    cout << "Value: " << value << endl;
+    std::cout << "Value: " << value << std::endl;
 
     value = 5;
 
     // Decreement
     value = value - 1;
-    cout << "Value: " << value << endl;
+    std::cout << "Value: " << value << std::endl;
 
     //=====================================================================
 
-    cout << "\n<======= Postfix =======>\n" << endl;
+    std::cout << "\n<======= Postfix =======>\n" << std::endl;
     value = 5;
-    cout << "\n=== Increment ===\n" << endl;
-    cout << "Value(Incrementing): " << value++ << endl;
-    cout << "Value(Incremented): " << value << endl;
+    std::cout << "\n=== Increment ===\n" << std::endl;
+    std::cout << "Value(Incrementing): " << value++ << std::endl;
+    std::cout << "Value(Incremented): " << value << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
     value = 5;
 
-    cout << "\n=== Decrement ===\n" << endl;
-    cout << "Value(Decrementing): " << value-- << endl;
-    cout << "Value(Decremented): " << value << endl;
+    std::cout << "\n=== Decrement ===\n" << std::endl;
+    std::cout << "Value(Decrementing): " << value-- << std::endl;
+    std::cout << "Value(Decremented): " << value << std::endl;
 
     //=====================================================================
 
-    cout << "\n<======= Prefix =======>\n" << endl;
+    std::cout << "\n<======= Prefix =======>\n" << std::endl;
 
     value = 5;
 
-    cout << "\n=== Increment ===\n" << endl;
-    cout << "Value: " << ++value << endl;
+    std::cout << "\n=== Increment ===\n" << std::endl;
+    std::cout << "Value: " << ++value << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
     value = 5;
 
-    cout << "\n=== Decrement ===\n" << endl;
-    cout << "Value: " << --value << endl;
+    std::cout << "\n=== Decrement ===\n" << std::endl;
+    std::cout << "Value: " << --value << std::endl;
 
     value = 5;
 

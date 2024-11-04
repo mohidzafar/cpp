@@ -1,36 +1,35 @@
 #include <iostream>
 
-using namespace std;
 
 int main(){
     
 	int value {45};
     
-    cout << "The value is : " << value << endl;
+    std::cout << "The value is : " << value << std::endl;
     
-    cout << endl;
-    cout << "Addition" << endl;
+    std::cout << std::endl;
+    std::cout << "Addition" << std::endl;
     value +=5; // equivalent to value = value + 5
-    cout << "Value : " << value << endl; // 50
+    std::cout << "Value : " << value << std::endl; // 50
 
-    cout << endl;
-    cout << "Subtraction" << endl;
+    std::cout << std::endl;
+    std::cout << "Subtraction" << std::endl;
     value -=5; // equivalent to value = value - 5
-    cout << "Value : " << value << endl; // 45 
+    std::cout << "Value : " << value << std::endl; // 45 
 
-    cout << endl;
-    cout << "Multiplication" << endl;
+    std::cout << std::endl;
+    std::cout << "Multiplication" << std::endl;
     value *=2;
-    cout << "Value : " << value << endl; // 90
+    std::cout << "Value : " << value << std::endl; // 90
 
-    cout << endl;
-    cout << "Division" << endl;
+    std::cout << std::endl;
+    std::cout << "Division" << std::endl;
     value /= 3;
-    cout << "Value : " << value << endl; // 30
+    std::cout << "Value : " << value << std::endl; // 30
 
-    cout << endl;
-    cout << "Modulous" << endl;
+    std::cout << std::endl;
+    std::cout << "Modulous" << std::endl;
     value %= 11;
-    cout << "Value : " << value << endl;// 8
+    std::cout << "Value : " << value << std::endl;// 8
     return 0;
 }

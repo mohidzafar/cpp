@@ -1,15 +1,14 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
 
 int main() {
     int age;
-    string full_name;
-    cout << "Enter Your Full Name: ";
+    std::string full_name;
+    std::cout << "Enter Your Full Name: ";
     getline(cin, full_name);
-    cout << "Enter Your Age: ";
+    std::cout << "Enter Your Age: ";
     cin >> age;
-    cout << "Your Name: " << full_name << endl;
-    cout << "Your Age: " << age << endl;
+    std::cout << "Your Name: " << full_name << std::endl;
+    std::cout << "Your Age: " << age << std::endl;
 }

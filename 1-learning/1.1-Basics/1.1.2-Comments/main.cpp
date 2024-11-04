@@ -5,14 +5,11 @@ on screen */
 // iostream library
 #include <iostream>
 
-// Adding namespace std
-using namespace std;
-
 // main function
 int main() {
 
     // Using cout function to print 'Hello World'
-    cout << "Hello World" << endl;
+    std::cout << "Hello World" << std::endl;
 
     //return statement
     return 0;
